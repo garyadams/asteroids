@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = max(speed - 0.01, 0);
+            <string>speed = max(speed - 0.01,0);
 </string>
           </argument>
         </arguments>
@@ -142,10 +142,11 @@ if (speed &gt; 5) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bullet = instance_create(x, y, obj_bullet);
-
+            <string>bullet = instance_create(x,y,obj_bullet);
 bullet.direction = image_angle;
 bullet.speed = speed + 8;
+
+audio_play_sound(snd_shoot,0,0);
 </string>
           </argument>
         </arguments>
