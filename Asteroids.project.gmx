@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\snd_shoot</sound>
     <sound>sound\snd_explode</sound>
+    <sound>sound\snd_die</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -14,7 +15,9 @@
     <sprite>sprites\spr_asteroid</sprite>
     <sprite>sprites\spr_asteroid_s</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_stars</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>

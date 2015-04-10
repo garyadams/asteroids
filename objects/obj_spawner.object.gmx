@@ -26,11 +26,16 @@
           <argument>
             <kind>1</kind>
             <string>if (!instance_exists(obj_asteroid)) {
-    instance_create(random(room_width),random(room_height),obj_asteroid);
-    instance_create(random(room_width),random(room_height),obj_asteroid);
-    instance_create(random(room_width),random(room_height),obj_asteroid);
-    instance_create(random(room_width),random(room_height),obj_asteroid);
-    instance_create(random(room_width),random(room_height),obj_asteroid);
+    //Increase the level.
+    global.level += 1;
+    
+    //Spawn asteroids based on the level.
+        
+    var i;
+    for (i = 0; i &lt; (1 + global.level); i += 1)
+    {
+        instance_create(random(room_width),random(room_height),obj_asteroid);
+    }
 }
 </string>
           </argument>
